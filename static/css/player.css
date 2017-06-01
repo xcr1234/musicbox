@@ -1,0 +1,340 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+ul,ul li,ol,ol li{
+	list-style: none;
+}
+
+
+.panel{
+	width: 100%;
+	height: 75px;
+	overflow: hidden;
+	background-color: #464646;
+}
+
+.left-panel{
+	float:left;
+	width: 170px;
+    height: 100%;
+}
+
+
+.play-btn{
+	height: 45px;
+    margin: 20px 0 20px 24px;
+    padding: 0;
+}
+
+.prev-button{
+	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -492px -1092px;
+
+}
+
+.pause-button{
+	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -444px -276px;
+}
+
+.play-button{
+	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -192px -144px;
+}
+
+.next-button{
+	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -372px -1081px;
+}
+
+
+.prev a,.next a {
+	text-indent: -999px;
+    display: block !important;
+    float: left;
+    width: 21px;
+    height: 21px;
+    margin-top: 9px;
+}
+.play a {
+	text-indent: -999px;
+    display: block !important;
+    float: left;
+    width: 29px;
+    height: 40px;
+}
+
+.play-btn .play, .play-btn .stop {
+    margin: 0 29px;
+}
+
+.play-btn li {
+    list-style: none;
+    padding: 0;
+    float: left;
+}
+
+.wg-button {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    text-decoration: none !important;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+
+.main-panel {
+    height: 100%;
+    overflow: hidden;
+    color: #FFF;
+    position: relative;
+}
+
+
+
+.main-panel .title-wrapper {
+    margin: 10px 0;
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+    float: left;
+    line-height: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.title-container{
+	
+	overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    width: 178px;
+}
+
+.main-panel .title {
+    white-space: nowrap;
+}
+.main-panel .title, .main-panel .icons {
+    color: #fff;
+    height: 20px;
+    text-align: left;
+    float: left;
+}
+
+.songname,.singer,.split,.currentTime,.totalTime{
+	color: #FFFFFF;
+	font-family:'microsoft yahei', Helvetica, Arial, 宋体, sans-serif;
+	font-size:14px;
+	letter-spacing: 1px;
+	
+}
+
+.currentTime{
+	padding-left: 15px;
+}
+.pane {
+    overflow: hidden;
+    clear: both;
+    padding-left: 20px;
+}
+
+.pane .time {
+    float: right;
+    width: 90px;
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 17px;
+    text-align: center;
+    overflow: hidden;
+}
+.pane .time {
+    float: right;
+    width: 100px;
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 17px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.pane .progress-wrapper {
+    margin-right: 107px;
+   
+}
+
+#progressSlider{
+	height: 8px;
+	position: relative;
+	margin-top: 5px;
+    border: none;
+    background-color: #2A94D9;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+a.pointer{
+	display: block;
+	
+	width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    margin: -5px 0 0 -9px;
+    font-size: 1px;
+    cursor: pointer;
+    outline: none;
+    background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -240px -372px;
+    
+}
+
+
+.right-panel {
+    overflow: hidden;
+    width: 490px;
+    height: 100%;
+    float: right;
+}
+
+.right-panel .playmod {
+    margin-top: 43px;
+    line-height: 20px;
+    height: 20px;
+    float: left;
+}
+
+.playmod li {
+    float: left;
+}
+
+.playmod a {
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    display: block !important;
+    width: 18px;
+    height: 15px;
+}
+
+.playmod .random-mode a{
+	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -72px -1104px;
+	
+}
+.playmod .single-mode {
+    margin: 0 10px;
+}
+
+.playmod .single-mode a{
+	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -72px -1080px;
+	
+}
+
+.playmod .list-mode a{
+	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -168px -1104px;
+	
+}
+
+.right-panel .volume {
+    margin-top: 43px;
+    line-height: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 25px;
+}
+.voice-button{
+	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -240px -1080px;
+	
+}
+.mute-button{
+	background-image: url('../img/player2.png');
+	background-repeat: no-repeat; 
+	background-position: -96px -456px;
+}
+
+.volume .wg-button{
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    display: block !important;
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+
+.vol-wrapper{
+	width: 75px;
+    margin-left: 28px;
+}
+
+.vol-slider{
+	width: 75px;
+	height: 5px;
+	background-color: #fff;
+	border-radius: 2px;
+    margin-top: 6px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+.vol-handler{
+	
+	left: 0;
+    top: 0;
+    margin: -4px 0 0 -7px;
+    width: 13px;
+    height: 13px;
+  	background-image: url('../img/player.png');
+	background-repeat: no-repeat; 
+	background-position: -24px -1080px;
+    position: absolute;
+    outline: none;
+    border-radius: 50%;
+}
+
+.hq{
+	height: 44px;
+    width: 128px;
+    margin: 22px 0 0 12px;
+    position: relative;
+    float: left;
+}
+
+.dev-btn{
+	background-image: url(../img/player.png);
+	background-position: 0px -276px;
+	background-repeat: no-repeat;
+	font-family: "microsoft yahei", Helvetica, Arial, "宋体", sans-serif;;
+	height: 100%;
+    padding-left: 11px;
+    text-align: center;
+    line-height: 41px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+.dev-btn span{
+	padding-right: 30px;
+    vertical-align: middle;
+    line-height: 44px;
+    font-size:12px;
+}

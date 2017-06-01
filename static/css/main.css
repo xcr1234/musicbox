@@ -1,0 +1,267 @@
+body{
+	background-color: #464646;
+}
+
+.template{
+	display: none;
+}
+
+.main-container{
+	width: 100%;
+	height: 605px;
+	overflow: hidden;
+}
+
+.left-container{
+	width: 70%;
+	height: 100%;
+	float:left;
+	background: #fff;
+
+}
+
+.right-container{
+	width: 30%;
+	height: 100%;
+	float:left;
+	background-image: url("../img/empty.png");
+	background-repeat: repeat-y;
+	background-color: #fff;
+}
+
+.lrc-container{
+	height: 100%;
+	
+	overflow: hidden;
+    position: relative;
+}
+.lrc{
+	overflow: hidden;
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.lrc p{
+	text-align: center;
+	font-size: 16px;
+	font-family: 'microsoft yahei', Helvetica, Arial, 宋体, sans-serif;
+	line-height: 28px;
+	color: #666666;
+	outline: none;
+	height: 28px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+p.active{
+	color: #1d94e1;
+}
+
+.header{
+	text-align: center;
+	height: 200px;
+	margin-top: 20px;
+}
+img.album{
+	width: 135px;
+	height: 135px;
+	cursor: pointer;
+}
+
+.album-name{
+	display: block;
+	color: #333333;
+	outline: none;
+	margin: 0 auto;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: 'microsoft yahei', Helvetica, Arial, 宋体, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.album-split{
+
+	height: 1px;
+	overflow: hidden;
+	background: url("../img/player.png") -216px -516px no-repeat;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.top-bar{
+	height: 45px;
+	background-color: #464646;
+}
+
+.searcher{
+	position: absolute;
+	top: 12px;
+	left: 66px;
+	z-index: 99;
+	width: 188px;
+	height: 25px;
+	line-height: 24px;
+	white-space: nowrap;
+	background: url("../img/player.png") no-repeat;
+	background-position: -228px -96px;
+
+}
+
+.searcher-container{
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	font-family: 'microsoft yahei', Helvetica, Arial, 宋体, sans-serif;
+	font-size: 12px;
+}
+
+
+.searcher-input{
+	width: 150px;
+	margin-left: 10px;
+	border: none;
+	padding: 3px 0;
+	height: 18px;
+	line-height: 18px;
+	box-sizing: content-box;
+	overflow: hidden;
+	outline: none;
+	background-color: transparent;
+	color: #900E0E;
+}
+
+.searcher-input::-webkit-input-placeholder{ /* WebKit browsers */
+	color: #333;
+}
+
+.searcher-input::-moz-placeholder{  /* Mozilla Firefox 19+ */
+	color: #333;
+}
+.searcher-input:-moz-placeholder{  /* Mozilla Firefox 4 to 18 */
+	color: #333;
+}
+
+.searcher-input:-ms-input-placeholder{  /* Internet Explorer 10+ */
+	color: #333;
+}
+
+
+.searcher-btn{
+	position: absolute;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	right: 0;
+	cursor: pointer;
+
+}
+
+.top-key{
+	margin-left: -125px;
+	display: block;
+	padding: 4px 16px;
+	position: absolute;
+	left: 381px;
+	z-index: 999;
+	color: rgb(238, 238, 238);
+	font-size: 12px;
+}
+
+ul.keys{
+	padding-left: 0;
+}
+
+ul.keys li{
+	float: left;
+	margin-left: 5px;
+}
+
+ul.keys li a {
+	color: inherit;
+	outline: none;
+}
+ul.keys li a:hover{
+	text-decoration: underline;
+}
+
+
+.main-table{
+	width: 100%;
+	font-family: 'microsoft yahei', Helvetica, Arial, 宋体, sans-serif;
+	font-size: 14px;
+	color: #333333;
+	text-align: center;
+	background: #f3faff;
+    table-layout: fixed;
+
+
+}
+
+.main-table thead tr{
+	height: 30px;
+	background-image: url("../img/player.png");
+	background-position:0px -1128px ;
+	background-repeat:  repeat-x ;
+}
+.main-table tbody tr{
+	
+	height: 45px;
+	cursor: pointer;
+	border-bottom: 1px dashed #fff;
+
+
+}
+
+/*响应式分页标签*/
+
+
+
+
+/*在大屏幕的桌面显示器上，每行的高度是45px*/
+@media (min-width: 1200px) {
+	.main-table tbody tr{
+		height: 45px;
+	}
+}
+
+@media (min-width: 992px){
+	table.main-table{
+		border-collapse: separate;
+    	border-spacing: 0 4px;
+	}
+	.main-table tbody tr{
+		height: 35px;
+	}
+}
+
+
+
+
+
+.main-table tbody tr:hover{
+	background-color: #ccc;
+}
+.main-table tbody tr td{
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.main-table a{
+	color: #000000;
+}
+.main-table a:hover{
+	text-decoration: underline;
+}
+
+.download-btn{
+	display: block;
+	background: url("../img/player.png") no-repeat -24px -468px;
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+}
