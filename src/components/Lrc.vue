@@ -43,7 +43,7 @@
                 if(song.albumname){
                     that.name = song.albumname;
                 }else{
-                    that.name = "《初学者》";
+                    that.name = "";
                 }
                 if(song.albumpic_small){
                     that.album = song.albumpic_small;

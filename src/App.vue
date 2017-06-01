@@ -5,6 +5,7 @@
             <Lrc></Lrc>
         </div>
         <Player ref="player"></Player>
+        <a href="https://github.com/xcr1234/musicbox" target="_blank"><img style="position: fixed; top: 0; right: 0; border: 0;" src="./../static/img/fork.png"></a>
     </div>
 </template>
 
