@@ -2,62 +2,63 @@ a {
     text-decoration: none;
     cursor: pointer;
     outline: none;
+
 }
 
 
 ul,ul li,ol,ol li{
-	list-style: none;
+    list-style: none;
 }
 
 
 .panel{
-	width: 100%;
-	height: 75px;
-	overflow: hidden;
-	background-color: #464646;
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    background-color: #464646;
 }
 
 .left-panel{
-	float:left;
-	width: 170px;
+    float:left;
+    width: 170px;
     height: 100%;
 }
 
 
 .play-btn{
-	height: 45px;
+    height: 45px;
     margin: 20px 0 20px 24px;
     padding: 0;
 }
 
 .prev-button{
-	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -492px -1092px;
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -492px -1092px;
 
 }
 
 .pause-button{
-	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -444px -276px;
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -444px -276px;
 }
 
 .play-button{
-	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -192px -144px;
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -192px -144px;
 }
 
 .next-button{
-	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -372px -1081px;
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -372px -1081px;
 }
 
 
 .prev a,.next a {
-	text-indent: -999px;
+    text-indent: -999px;
     display: block !important;
     float: left;
     width: 21px;
@@ -65,7 +66,7 @@ ul,ul li,ol,ol li{
     margin-top: 9px;
 }
 .play a {
-	text-indent: -999px;
+    text-indent: -999px;
     display: block !important;
     float: left;
     width: 29px;
@@ -115,8 +116,8 @@ ul,ul li,ol,ol li{
 }
 
 .title-container{
-	
-	overflow: hidden;
+
+    overflow: hidden;
     float: left;
     margin-left: 20px;
     width: 178px;
@@ -133,15 +134,15 @@ ul,ul li,ol,ol li{
 }
 
 .songname,.singer,.split,.currentTime,.totalTime{
-	color: #FFFFFF;
-	font-family:'microsoft yahei', Helvetica, Arial, 宋体, sans-serif;
-	font-size:14px;
-	letter-spacing: 1px;
-	
+    color: #FFFFFF;
+    font-family:'microsoft yahei', Helvetica, Arial, 宋体, sans-serif;
+    font-size:14px;
+    letter-spacing: 1px;
+
 }
 
 .currentTime{
-	padding-left: 15px;
+    padding-left: 15px;
 }
 .pane {
     overflow: hidden;
@@ -171,13 +172,13 @@ ul,ul li,ol,ol li{
 
 .pane .progress-wrapper {
     margin-right: 107px;
-   
+
 }
 
 #progressSlider{
-	height: 8px;
-	position: relative;
-	margin-top: 5px;
+    height: 8px;
+    position: relative;
+    margin-top: 5px;
     border: none;
     background-color: #2A94D9;
     border-radius: 0;
@@ -185,9 +186,9 @@ ul,ul li,ol,ol li{
 }
 
 a.pointer{
-	display: block;
-	
-	width: 18px;
+    display: block;
+
+    width: 18px;
     height: 18px;
     top: 0;
     left: 0;
@@ -197,9 +198,9 @@ a.pointer{
     cursor: pointer;
     outline: none;
     background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -240px -372px;
-    
+    background-repeat: no-repeat;
+    background-position: -240px -372px;
+
 }
 
 
@@ -230,27 +231,27 @@ a.pointer{
 }
 
 .playmod .random-mode a{
-	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -72px -1104px;
-	
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -72px -1104px;
+
 }
 .playmod .single-mode {
     margin: 0 10px;
 }
 
 .playmod .single-mode a{
-	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -72px -1080px;
-	
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -72px -1080px;
+
 }
 
 .playmod .list-mode a{
-	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -168px -1104px;
-	
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -168px -1104px;
+
 }
 
 .right-panel .volume {
@@ -261,15 +262,15 @@ a.pointer{
     margin-left: 25px;
 }
 .voice-button{
-	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -240px -1080px;
-	
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -240px -1080px;
+
 }
 .mute-button{
-	background-image: url('../img/player2.png');
-	background-repeat: no-repeat; 
-	background-position: -96px -456px;
+    background-image: url('../img/player2.png');
+    background-repeat: no-repeat;
+    background-position: -96px -456px;
 }
 
 .volume .wg-button{
@@ -282,37 +283,37 @@ a.pointer{
 }
 
 .vol-wrapper{
-	width: 75px;
+    width: 75px;
     margin-left: 28px;
 }
 
 .vol-slider{
-	width: 75px;
-	height: 5px;
-	background-color: #fff;
-	border-radius: 2px;
+    width: 75px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2px;
     margin-top: 6px;
     position: relative;
     border: none;
     cursor: pointer;
 }
 .vol-handler{
-	
-	left: 0;
+
+    left: 0;
     top: 0;
     margin: -4px 0 0 -7px;
     width: 13px;
     height: 13px;
-  	background-image: url('../img/player.png');
-	background-repeat: no-repeat; 
-	background-position: -24px -1080px;
+    background-image: url('../img/player.png');
+    background-repeat: no-repeat;
+    background-position: -24px -1080px;
     position: absolute;
     outline: none;
     border-radius: 50%;
 }
 
 .hq{
-	height: 44px;
+    height: 44px;
     width: 128px;
     margin: 22px 0 0 12px;
     position: relative;
@@ -320,11 +321,11 @@ a.pointer{
 }
 
 .dev-btn{
-	background-image: url(../img/player.png);
-	background-position: 0px -276px;
-	background-repeat: no-repeat;
-	font-family: "microsoft yahei", Helvetica, Arial, "宋体", sans-serif;;
-	height: 100%;
+    background-image: url(../img/player.png);
+    background-position: 0px -276px;
+    background-repeat: no-repeat;
+    font-family: "microsoft yahei", Helvetica, Arial, "宋体", sans-serif;;
+    height: 100%;
     padding-left: 11px;
     text-align: center;
     line-height: 41px;
@@ -333,7 +334,7 @@ a.pointer{
     display: block;
 }
 .dev-btn span{
-	padding-right: 30px;
+    padding-right: 30px;
     vertical-align: middle;
     line-height: 44px;
     font-size:12px;
