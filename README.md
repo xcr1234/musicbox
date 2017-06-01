@@ -23,4 +23,4 @@
 
 `npm run build`
 
-在dist目录下会生成打包好的静态html文件。
+在dist目录下会生成打包好的静态html文件。（注意相对路径是musicbox）
