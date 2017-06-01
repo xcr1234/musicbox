@@ -2,6 +2,10 @@
 
 ## 音乐盒（仿百度ui）
 
+Enjoy it ： https://xcr1234.github.io/musicbox
+
+推荐使用Chrome内核浏览器打开。
+
 在上方点击/输入关键词可以搜索音乐，在下方点击控制播放。
 
 整个项目完全重构，使用WebPack + Vue.js 的技术。
@@ -23,4 +27,4 @@
 
 `npm run build`
 
-在dist目录下会生成打包好的静态html文件。（注意相对路径是musicbox）
+在dist目录下会生成打包好的静态html文件。（注意相对路径是`musicbox`，`config/index.js`中的`assetsPublicPath`设置）

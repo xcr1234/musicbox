@@ -17,14 +17,14 @@
 
 <script>
 
-    import lrc from '../../static/js/lrc';
+    import lrc from './../../static/js/lrc';
 
     export default{
         name:'Lrc',
         data:function () {
             return{
                 name:"《初学者》",
-                album:"/static/img/mt1.jpg"
+                album:"static/img/mt1.jpg"
             }
         },
         mounted:function () {
@@ -48,7 +48,7 @@
                 if(song.albumpic_small){
                     that.album = song.albumpic_small;
                 }else{
-                    that.album = "/static/img/mt1.jpg";
+                    that.album = "static/img/mt1.jpg";
                 }
                 handleLrc(audio,lryic,initMargin);
             });

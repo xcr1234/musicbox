@@ -37,7 +37,7 @@
 </script>
 
 <style scoped>
-    @import "/static/css/pure.css";
-    @import '/static/css/player.css';
-    @import '/static/css/main.css';
+    @import "./../static/css/pure.css";
+    @import './../static/css/player.css';
+    @import './../static/css/main.css';
 </style>

@@ -31,17 +31,17 @@ body{
 
 .lrc-container{
 	height: 100%;
-	
+
 	overflow: hidden;
-    position: relative;
+	position: relative;
 }
 .lrc{
 	overflow: hidden;
-    margin-top: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+	margin-top: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 .lrc p{
 	text-align: center;
@@ -195,7 +195,7 @@ ul.keys li a:hover{
 	color: #333333;
 	text-align: center;
 	background: #f3faff;
-    table-layout: fixed;
+	table-layout: fixed;
 
 
 }
@@ -207,7 +207,7 @@ ul.keys li a:hover{
 	background-repeat:  repeat-x ;
 }
 .main-table tbody tr{
-	
+
 	height: 45px;
 	cursor: pointer;
 	border-bottom: 1px dashed #fff;
@@ -230,7 +230,7 @@ ul.keys li a:hover{
 @media (min-width: 992px){
 	table.main-table{
 		border-collapse: separate;
-    	border-spacing: 0 4px;
+		border-spacing: 0 4px;
 	}
 	.main-table tbody tr{
 		height: 35px;
@@ -245,9 +245,9 @@ ul.keys li a:hover{
 	background-color: #ccc;
 }
 .main-table tbody tr td{
-    word-break: keep-all;
-    white-space: nowrap;
-    overflow: hidden;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
 
 }
 

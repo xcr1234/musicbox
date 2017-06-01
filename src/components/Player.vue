@@ -68,7 +68,7 @@
 
 <script>
 
-    import drag from '../../static/js/drag';
+    import drag from './../../static/js/drag';
 
 
 
@@ -208,7 +208,6 @@
                 },function (res) {
                     if(res.showapi_res_code == 0){
                         var lyric = HTMLDecode(res.showapi_res_body.lyric);
-                        console.log(lyric);
                         window.bus.$emit("lyric",song,lyric);
                     }else{
                         console.error(res.showapi_res_error);
