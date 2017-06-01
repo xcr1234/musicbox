@@ -24,7 +24,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      'jquery':'jquery'
+      'jquery':path.resolve(__dirname, '../static/js/jquery.min')   //这里要用自行引入的jquery，不然在https环境中有问题
     }
   },
     plugins: [

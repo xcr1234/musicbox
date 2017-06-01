@@ -201,7 +201,7 @@
 
 
 
-                $.post("http://route.showapi.com/213-2",{
+                $.post("//route.showapi.com/213-2",{
                     showapi_appid:global.appid,
                     showapi_sign:global.sign,
                     musicid:song.songid

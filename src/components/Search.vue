@@ -56,7 +56,7 @@
         methods:{
             search:function (key) {
                 var $this = this;
-                $.post("http://route.showapi.com/213-1",{
+                $.post("//route.showapi.com/213-1",{
                     showapi_appid:global.appid,
                     showapi_sign:global.sign,
                     keyword : key
