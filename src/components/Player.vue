@@ -68,7 +68,8 @@
 
 <script>
 
-    import drag from './../../static/js/drag';
+    import './../../static/js/drag';
+
 
 
 
@@ -215,6 +216,8 @@
                 });
 
             });
+
+
 
         }
     }

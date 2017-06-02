@@ -3,7 +3,7 @@
 <template>
     <div class="right-container">
         <div class="header">
-            <img v-bind:src="album" class="album">
+            <a  v-bind:href="'http://www.baidu.com/s?wd='+encodeURI(name)" target="_blank"><img v-bind:src="album" class="album"></a>
             <a class="album-name">{{name}}</a>
         </div>
         <div class="album-split"></div>

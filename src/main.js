@@ -8,8 +8,10 @@ import resource from 'vue-resource';
 
 
 //定义http接口的全局变量
-global.appid = 39367;
-global.sign = "c4528d67e59a46b5a201a9c74c8b7b05";
+global.appid = 36320;
+global.sign = "ab25b71f4a8a4aba8f58c68f3b50de9b";
+
+
 
 
 Vue.config.productionTip = false

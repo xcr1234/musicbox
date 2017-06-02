@@ -17,13 +17,14 @@
                 </ul>
             </div>
         </div>
+        <div class="table">
         <table class="main-table">
             <thead>
             <tr>
                 <th style="width: 23%" class="c0">歌手</th>
                 <th style="width: 23%" class="c1">歌曲</th>
                 <th style="width: 23%" class="c2">专辑</th>
-                <th style="width: 18%" class="c3">时长</th>
+                <th style="width: 18%" class="c3"></th>
                 <th style="width: 13%" class="c4"></th>
             </tr>
             </thead>
@@ -37,13 +38,19 @@
             </tr>
             </tbody>
         </table>
+        </div>
+        <div class="page">
+            <div class="counter"></div>
+            <button class="paginate left"><i></i><i></i></button>
+            <button class="paginate right"><i></i><i></i></button>
+        </div>
     </div>
 </template>
 
 <script>
 
 
-
+    import page from './../../static/js/page';
 
     export default{
         name:"Search",
@@ -56,6 +63,7 @@
         methods:{
             search:function (key) {
                 var $this = this;
+                this.key = key;
                 $.post("//route.showapi.com/213-1",{
                     showapi_appid:global.appid,
                     showapi_sign:global.sign,
@@ -63,6 +71,9 @@
                 },function (res) {
                     if(res.showapi_res_code == 0){
                         $this.songs  = res.showapi_res_body.pagebean.contentlist;
+                        page.setIndex(0);
+                        page.setTotal(res.showapi_res_body.pagebean.allPages);
+                        page.validate();
                     }else{
                         console.error(res.showapi_res_error);
                     }
@@ -85,7 +96,28 @@
             }
         },
         mounted:function () {
+
+            var $this = this;
+
             this.search('命运石之门');
+
+            window.bus.$on('page',function (page) {
+                $.post("//route.showapi.com/213-1",{
+                    showapi_appid:global.appid,
+                    showapi_sign:global.sign,
+                    keyword : $this.key,
+                    page : page
+                },function (res) {
+                    if(res.showapi_res_code == 0){
+                        $this.songs  = res.showapi_res_body.pagebean.contentlist;
+                        page.setIndex(0);
+                        page.setTotal(res.showapi_res_body.pagebean.allPages);
+                        page.validate();
+                    }else{
+                        console.error(res.showapi_res_error);
+                    }
+                });
+            })
         }
     }
 
