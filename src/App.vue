@@ -16,6 +16,8 @@
     import Lrc from './components/Lrc';
     import Player from './components/Player';
 
+    import "native-toast/dist/native-toast.css";
+
     window.bus = new Vue(); //在window上维护一个bus（总线），用于传递自定义消息。
 
     export default{
@@ -36,6 +38,8 @@
         }
     }
 </script>
+
+
 
 <style scoped>
     @import "./../static/css/pure.css";
