@@ -3,6 +3,10 @@ const sign = "ab25b71f4a8a4aba8f58c68f3b50de9b";
 
 import nativeToast from 'native-toast';
 
+import cache from './lru';
+
+
+
 function error(message) {
     nativeToast({
         message:message,
@@ -34,6 +38,14 @@ export default {
      */
     lyric:function (songid,callback) {
 
+        var cacheKey = "lyric-" + songid;
+
+        if(cache.hasKey(cacheKey)){
+            var lyric = cache.get(cacheKey);
+            callback(lyric);
+            return;
+        }
+
 
         $.ajax({
             url : "//route.showapi.com/213-2",
@@ -45,8 +57,11 @@ export default {
             },
             success:function (res) {
                 if(res.showapi_res_code == 0){
-                    var lyric = HTMLDecode(res.showapi_res_body.lyric);
-                    callback(lyric);
+                    if(res.showapi_res_body && res.showapi_res_body.lyric){
+                        var lyric = HTMLDecode(res.showapi_res_body.lyric);
+                        cache.put(cacheKey,lyric);
+                        callback(lyric);
+                    }
                 }else{
                     console.error(res);
                     error(res.showapi_res_error);
@@ -65,6 +80,16 @@ export default {
      * @param page 分页
      */
     search:function (key,callback,page) {
+
+        var cacheKey = "search-" + key + "-" + page;
+
+        if(cache.hasKey(cacheKey)){
+            var res = cache.get(cacheKey);
+            callback(res.showapi_res_body.pagebean.contentlist,res.showapi_res_body.pagebean.allPages);
+            return;
+        }
+
+
         $.ajax({
             url:"//route.showapi.com/213-1",
             type:"POST",
@@ -76,6 +101,7 @@ export default {
             },
             success:function (res) {
                 if(res.showapi_res_code == 0){
+                    cache.put(cacheKey,res);
                     callback(res.showapi_res_body.pagebean.contentlist,res.showapi_res_body.pagebean.allPages);
                 }else{
                     console.error(res);
