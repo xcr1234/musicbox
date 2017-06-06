@@ -41,7 +41,7 @@
 
 
 
-<style scoped>
+<style>
     @import "./../static/css/pure.css";
     @import './../static/css/player.css';
     @import './../static/css/main.css';
